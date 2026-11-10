@@ -1,1 +1,15 @@
 # STM32-Based-Melody-Generator
+
+The STM32-Based Melody Generator was developed as a hands-on embedded electronics project to explore how a microcontroller can produce different sounds while coordinating visual and display outputs. The main objective was to build a compact system that could play familiar melodies and emergency vehicle sirens through a speaker and buzzer, while providing corresponding visual feedback through LEDs and displaying lyrics or relevant text on an OLED screen.
+
+The project uses an STM32 microcontroller as its central control unit. I used STM32CubeIDE and STM32 utility tools for microcontroller configuration, peripheral setup and firmware development. One of the key parts of the implementation was using **Pulse Width Modulation (PWM)** to generate sound at different frequencies. By changing the PWM frequency, the system could produce different musical notes and sound patterns. Combining these frequencies in a specific sequence allowed the generation of complete melodies and siren sounds through the connected speaker and buzzer.
+
+The system supports seven different sound selections, including familiar melodies such as *Twinkle Twinkle Little Star* and *Jana Gana Mana*, along with emergency vehicle sirens such as police, ambulance and fire truck sounds. To make operation simple, I integrated two push buttons with separate functions. The red button controls the system's power on and off, while the blue button allows the user to switch between the seven available melodies and siren patterns.
+
+Along with audio generation, I incorporated six LEDs to provide visual synchronisation with the sound output. An OLED display was also integrated to show the corresponding lyrics or text while a melody was playing. I used I2C communication to interface with the display, reducing the number of connections required between the microcontroller and the peripheral.
+
+I also focused on the physical hardware arrangement of the prototype. Components were positioned on a breadboard-based zero-PCB assembly with the aim of keeping connections organised and minimising unnecessary wire lengths. I paid attention to component placement, proper ground connections and clean wiring to make the circuit easier to assemble and troubleshoot. The physical assembly involved hand soldering and through-hole component mounting, with care taken to maintain reliable electrical connections.
+
+This project gave me practical experience in STM32 peripheral configuration, PWM-based sound generation, I2C communication, push-button interfacing, display integration and hardware assembly. It also helped me understand the relationship between firmware and physical circuit design, particularly how multiple hardware peripherals can work together under a single microcontroller.
+
+Overall, the project was an opportunity to combine embedded programming, basic electronics, audio generation and visual feedback into one working prototype. It strengthened my understanding of microcontroller-based system development, circuit organisation, component placement and hands-on hardware debugging.
