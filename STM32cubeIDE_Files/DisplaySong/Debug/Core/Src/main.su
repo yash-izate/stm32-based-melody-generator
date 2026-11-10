@@ -1,0 +1,12 @@
+main.c:59:6:Speaker_PlayFreq	24	static
+main.c:73:6:OLED_ShowText	16	static
+main.c:81:6:OLED_ShowTwoLine	16	static
+main.c:95:6:LED_Music	16	static
+main.c:140:6:Twinkle_Update	16	static
+main.c:191:6:Play_TwinkleTwinkle_Synced	232	static
+main.c:268:5:main	8	static
+main.c:295:6:SystemClock_Config	72	static
+main.c:331:13:MX_I2C1_Init	8	static
+main.c:365:13:MX_TIM1_Init	96	static
+main.c:440:13:MX_GPIO_Init	32	static
+main.c:468:6:Error_Handler	4	static,ignoring_inline_asm
